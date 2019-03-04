@@ -4,6 +4,7 @@ import torch.nn.functional as F
 import models.nn_ as nn_
 import torch.optim as optim
 
+
 class CapsuleLayer(nn.Module):
     def __init__(self, in_num_capsules, in_dims, op, kernel_size, stride, out_num_capsules, out_dims, routing):
         super().__init__()
